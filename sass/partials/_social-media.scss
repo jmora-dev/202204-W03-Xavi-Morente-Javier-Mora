@@ -1,0 +1,16 @@
+@use "variables";
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.8rem;
+}
+
+.social-media__link:hover .social-media__image {
+    filter: variables.$pink-color-filter;
+}
+
+.social-media__image {
+    filter: variables.$green-color-filter;
+}

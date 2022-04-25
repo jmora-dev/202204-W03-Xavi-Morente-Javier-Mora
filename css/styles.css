@@ -54,6 +54,12 @@ ul {
   margin-top: 0;
 }
 
+.footer__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .footer__title {
   color: #16ffbd;
   font-weight: 300;

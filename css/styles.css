@@ -22,6 +22,87 @@ ul {
   list-style: none;
 }
 
+.card-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  transform: skewY(-10deg);
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 14/11;
+  margin: -1px 0;
+}
+
+.card:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: -2px 0;
+  z-index: 2;
+}
+
+.card__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 3;
+  transform: skewY(10deg);
+  opacity: 0;
+}
+
+.card:hover .card__content {
+  opacity: 1;
+}
+
+.card__image {
+  position: absolute;
+  top: -25%;
+  left: -15%;
+  z-index: 1;
+  width: 130%;
+  transform: skewY(10deg);
+}
+
+.card:hover .card__image {
+  top: -35%;
+  left: -25%;
+  width: 150%;
+}
+
+.card__icon {
+  width: 10%;
+  filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
+}
+
+.card__title {
+  color: #fff;
+  font-weight: 300;
+  margin: 1.2rem 0 0 0;
+}
+
+.card__text {
+  color: #16ffbd;
+  text-transform: lowercase;
+  font-weight: 400;
+  font-size: 0.7rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .footer {
   position: relative;
   display: flex;

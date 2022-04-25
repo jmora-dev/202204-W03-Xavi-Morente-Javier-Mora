@@ -100,6 +100,8 @@ ul {
 .footer__content-panel {
   display: grid;
   grid-template-columns: 1fr;
+  width: 100%;
+  max-width: 1200px;
 }
 
 .footer-section {

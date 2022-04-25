@@ -39,6 +39,11 @@
     color: variables.$pink-color;
 }
 
+.footer__line-through::after {
+    content: "ipsum";
+    color: variables.$green-color;
+}
+
 .footer__x-icon {
     width: 0.5rem;
     filter: variables.$green-color-filter;

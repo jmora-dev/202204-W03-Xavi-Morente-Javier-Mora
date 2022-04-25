@@ -62,6 +62,11 @@ ul {
   color: #fd8cab;
 }
 
+.footer__line-through::after {
+  content: "ipsum";
+  color: #16ffbd;
+}
+
 .footer__x-icon {
   width: 0.5rem;
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);

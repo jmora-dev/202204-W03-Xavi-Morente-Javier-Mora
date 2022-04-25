@@ -11,6 +11,7 @@
     text-align: center;
     padding-bottom: 6rem;
 }
+
 .footer::after {
     content: "";
     position: absolute;
@@ -36,12 +37,7 @@
 
 .footer__line-through {
     text-decoration: line-through;
-    color: variables.$pink-color;
-}
-
-.footer__line-through::after {
-    content: "ipsum";
-    color: variables.$green-color;
+    text-decoration-color: variables.$pink-color;
 }
 
 .footer__x-icon {
@@ -52,6 +48,7 @@
 .footer-menu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 1rem 0 2.5rem;
 }
 
@@ -59,6 +56,10 @@
     font-size: 2rem;
     text-transform: lowercase;
     color: variables.$white-color;
+}
+
+.footer-menu__link:hover {
+    color: variables.$pink-color;
 }
 
 .footer-menu__link--is-active {
@@ -74,6 +75,7 @@
 .footer-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
@@ -102,11 +104,11 @@
         display: none;
     }
 
-    .footer__block-panel--text-left-desktop {
-        text-align: left;
+    .footer__section--align-left-desktop {
+        align-items: flex-start;
     }
 
-    .footer__block-panel--text-right-desktop {
-        text-align: right;
+    .footer__section--align-right-desktop {
+        align-items: flex-end;
     }
 }

@@ -241,4 +241,93 @@ ul {
   filter: invert(76%) sepia(53%) saturate(657%) hue-rotate(100deg) brightness(101%) contrast(101%);
 }
 
+.imgHeader {
+  height: 90px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  margin-top: 60px;
+}
+
+.menu > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu__link:hover {
+  color: #fd8cab;
+}
+
+.media-main {
+  position: relative;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  transform: skewY(-10deg);
+  margin-bottom: 100px;
+}
+
+.video-main {
+  position: absolute;
+  width: 100%;
+  height: 120vw;
+  min-height: 120%;
+  top: -10vw;
+  transform: skewY(10deg);
+  object-fit: cover;
+}
+
+.text-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text-main__inner {
+  width: 30%;
+  text-align: center;
+}
+
+.main-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.cross {
+  height: 10px;
+}
+
+.wavyline {
+  margin-top: 3%;
+  height: 10px;
+}
+
+.main-title > a:hover {
+  color: #fd8cab;
+}
+
+.galery-main {
+  margin-bottom: 100px;
+}
+
+.card__content p {
+  font-size: small;
+}
+
 /*# sourceMappingURL=styles.css.map */

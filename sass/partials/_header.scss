@@ -1,0 +1,26 @@
+@use "variables";
+
+.imgHeader{
+height: 90px;
+margin-right: 30px;
+margin-left: 30px;
+}
+.menu{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-list{
+   display: flex; 
+   justify-content: center;
+   margin-bottom: 80px;
+   margin-top: 60px;
+}
+.menu > ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.menu__link:hover{
+   color: variables.$pink-color;
+}
